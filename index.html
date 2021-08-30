@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sporst DB</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="text-center">
+            <h2>Welcome to Sports DataBase</h2>
+            <div class="input-group mb-3 w-50 mx-auto">
+                <input id="search-field" type="text" class="form-control" placeholder="Search Here By Club Name"
+                    aria-label="club-name" aria-describedby="search-btn">
+                <button onclick="searchByName()" class="btn btn-success" type="button" id="search-btn">Search</button>
+            </div>
+        </div>
+        <div id="card-container" class="row row-cols-1 row-cols-md-3 g-4">
+        </div>
+    </main>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/sports.js"></script>
+</body>
+
+</html>
